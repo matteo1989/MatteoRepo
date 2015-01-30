@@ -14,9 +14,5 @@ namespace Elysium.Domain
 
         public DbSet<UserRole> UserRoles { get; set; }
 
-        public void Dispose()
-        {
-            GC.SuppressFinalize(this);
-        }
     }
 }
