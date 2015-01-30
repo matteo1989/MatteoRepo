@@ -8,11 +8,15 @@ using System.Threading.Tasks;
 
 namespace Elysium.Domain
 {
-    public class RoleContext : DbContext
+    public class RoleContext : DbContext, IDisposable
     {
         public DbSet<User> Users { get; set; }
 
         public DbSet<UserRole> UserRoles { get; set; }
 
+        public void Dispose()
+        {
+            GC.SuppressFinalize(this);
+        }
     }
 }
