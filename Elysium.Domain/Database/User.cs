@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Elysium.Domain.Database
 {
-    class User
+    public class User
     {
         [Key]
         public int Id { get; set; }
@@ -20,5 +21,8 @@ namespace Elysium.Domain.Database
 
         [MaxLength(255)]
         public string LastName { get; set; }
+
+        [ForeignKey("UserId")]
+        public ICollection<UserRole> UserRoles { get; set; }
     }
 }

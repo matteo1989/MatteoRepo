@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Elysium.Domain.Database;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -7,8 +8,11 @@ using System.Threading.Tasks;
 
 namespace Elysium.Domain
 {
-    class RoleContext: DbContext
+    public class RoleContext : DbContext
     {
-        public int MyProperty { get; set; }
+        public DbSet<User> Users { get; set; }
+
+        public DbSet<UserRole> UserRoles { get; set; }
+
     }
 }
