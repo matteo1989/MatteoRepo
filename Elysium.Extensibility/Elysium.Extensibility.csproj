@@ -41,7 +41,6 @@
   <ItemGroup>
     <Compile Include="Dtos\User\IUser.cs" />
     <Compile Include="Dtos\User\User.cs" />
-    <Compile Include="Dtos\User\UserRole.cs" />
     <Compile Include="IUserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

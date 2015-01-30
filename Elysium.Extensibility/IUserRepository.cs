@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Elysium.Extensibility.Dtos.User;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,10 +9,10 @@ namespace Elysium.Extensibility
 {
     public interface IUserRepository
     {
-        void AddUser();
+        void AddUser(IUser user);
 
-        void UpdateUser();
+        void UpdateUser(IUser user);
 
-        void DeleteUser();
+        void DeleteUser(int userId);
     }
 }
