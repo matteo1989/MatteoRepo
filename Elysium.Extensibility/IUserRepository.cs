@@ -14,5 +14,7 @@ namespace Elysium.Extensibility
         void UpdateUser(IUser user);
 
         void DeleteUser(int userId);
+
+        IEnumerable<IUser> GetUsers();
     }
 }

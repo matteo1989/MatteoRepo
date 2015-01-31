@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elysium.Domain", "Elysium.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elysium.Extensibility", "Elysium.Extensibility\Elysium.Extensibility.csproj", "{8D0C4EA6-C4B4-4263-949A-17636F7A404E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication", "TestApplication\TestApplication.csproj", "{F8E73EAC-6177-4BC9-85A0-7D8E29A1E480}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8D0C4EA6-C4B4-4263-949A-17636F7A404E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D0C4EA6-C4B4-4263-949A-17636F7A404E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D0C4EA6-C4B4-4263-949A-17636F7A404E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8E73EAC-6177-4BC9-85A0-7D8E29A1E480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E73EAC-6177-4BC9-85A0-7D8E29A1E480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8E73EAC-6177-4BC9-85A0-7D8E29A1E480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8E73EAC-6177-4BC9-85A0-7D8E29A1E480}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

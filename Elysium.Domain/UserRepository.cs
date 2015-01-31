@@ -41,5 +41,10 @@ namespace Elysium.Domain
             roleContext.Users.Remove(userToDelete);
             roleContext.SaveChanges();
         }
+
+        public IEnumerable<DtoUser> GetUsers()
+        {
+            return roleContext.Users.ToList().Select(s => s.ToDtoUser());
+        }
     }
 }
